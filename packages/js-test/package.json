@@ -1,0 +1,29 @@
+{
+  "name": "js-test",
+  "version": "0.0.0",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/js-test.umd.cjs",
+  "module": "./dist/js-test.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "types": "./dist/index.d.ts",
+    "import": "./dist/js-test.js",
+    "require": "./dist/js-test.umd.cjs"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build"
+  },
+  "devDependencies": {
+    "@types/node": "^20.2.4",
+    "typescript": "^4.9.4",
+    "vite": "^4.0.4",
+    "vite-plugin-dts": "^2.3.0"
+  },
+  "publishConfig": {
+    "registry": "http://localhost:4873"
+  }
+}
